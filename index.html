@@ -1,51 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8"/>
+    <meta charset="utf-8" name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes"/>
     <title>giligili (๑•̀ㅂ•́)و✧ 干巴爹~</title>
     <link rel="Shortcut Icon" href="images/logo_small.png">
     <style type="text/css">
         @keyframes slider {
-            0%{transform: translateX(0px);}
-            5%{transform: translateX(-440px);}
-            20%{transform: translateX(-440px);}
-            25%{transform: translateX(-880px);}
-            40%{transform: translateX(-880px);}
-            45%{transform: translateX(-1320px);}
-            60%{transform: translateX(-1320px);}
-            65%{transform: translateX(-1760px);}
-            80%{transform: translateX(-1760px);}
-            85%{transform: translateX(-2200px);}
-            100%{transform: translateX(-2200px);}
+            0% {
+                transform: translateX(0px);
+            }
+            5% {
+                transform: translateX(-440px);
+            }
+            20% {
+                transform: translateX(-440px);
+            }
+            25% {
+                transform: translateX(-880px);
+            }
+            40% {
+                transform: translateX(-880px);
+            }
+            45% {
+                transform: translateX(-1320px);
+            }
+            60% {
+                transform: translateX(-1320px);
+            }
+            65% {
+                transform: translateX(-1760px);
+            }
+            80% {
+                transform: translateX(-1760px);
+            }
+            85% {
+                transform: translateX(-2200px);
+            }
+            100% {
+                transform: translateX(-2200px);
+            }
         }
-        .container{width: 440px; height: 220px; overflow: hidden;}
-        .itemList{width: 9999px; margin: 0; padding: 0; border: 0; position: relative; font-size: 0;}
-        .itemListSlider{left: 0; animation: slider 10s linear infinite;}
-        .itemList:hover{animation-play-state:paused;}
-        .item{width: 440px; height: 220px; margin: 0; padding: 0; border: 0; display: inline-block;}
-        .item1{background: url("images/gg1.jpg"); height: 220px; width: 440px;}
-        .item2{background: url("images/gg2.jpg"); height: 220px; width: 440px;}
-        .item3{background: url("images/gg3.jpg"); height: 220px; width: 440px;}
-        .item4{background: url("images/gg4.jpg"); height: 220px; width: 440px;}
-        .item5{background: url("images/gg5.png"); height: 220px; width: 440px;}
+
+        .container {
+            width: 440px;
+            height: 220px;
+            overflow: hidden;
+        }
+
+        .itemList {
+            width: 9999px;
+            margin: 0;
+            padding: 0;
+            border: 0;
+            position: relative;
+            font-size: 0;
+        }
+
+        .itemListSlider {
+            left: 0;
+            animation: slider 10s linear infinite;
+        }
+
+        .itemList:hover {
+            animation-play-state: paused;
+        }
+
+        .item {
+            width: 440px;
+            height: 220px;
+            margin: 0;
+            padding: 0;
+            border: 0;
+            display: inline-block;
+        }
+
+        .item1 {
+            background: url("images/gg1.jpg");
+            height: 220px;
+            width: 440px;
+        }
+
+        .item2 {
+            background: url("images/gg2.jpg");
+            height: 220px;
+            width: 440px;
+        }
+
+        .item3 {
+            background: url("images/gg3.jpg");
+            height: 220px;
+            width: 440px;
+        }
+
+        .item4 {
+            background: url("images/gg4.jpg");
+            height: 220px;
+            width: 440px;
+        }
+
+        .item5 {
+            background: url("images/gg5.png");
+            height: 220px;
+            width: 440px;
+        }
 
         @keyframes slider_s {
-            0%{transform: translateX(0px);}
-            10%{transform: translateX(-260px);}
-            33%{transform: translateX(-260px);}
-            43%{transform: translateX(-520px);}
-            66%{transform: translateX(-520px);}
-            76%{transform: translateX(-780px);}
-            100%{transform: translateX(-780px);}
+            0% {
+                transform: translateX(0px);
+            }
+            10% {
+                transform: translateX(-260px);
+            }
+            33% {
+                transform: translateX(-260px);
+            }
+            43% {
+                transform: translateX(-520px);
+            }
+            66% {
+                transform: translateX(-520px);
+            }
+            76% {
+                transform: translateX(-780px);
+            }
+            100% {
+                transform: translateX(-780px);
+            }
         }
-        .container_s{width: 260px; height: 248px; overflow: hidden; border-radius: 5px}
-        .itemList_s{width: 9999px; margin: 0; padding: 0; border: 0; position: relative; font-size: 0;}
-        .itemListSlider_s{left: 0; animation: slider_s 6s linear infinite;}
-        .itemList_s:hover{animation-play-state:paused;}
-        .item_s{width: 260px; height: 248px; margin: 0; padding: 0; border: 0; display: inline-block;}
-        .item1_s{background: url("images/gg8.jpg"); width: 260px; height: 248px;}
-        .item2_s{background: url("images/gg9.png"); width: 260px; height: 248px;}
-        .item3_s{background: url("images/gg10.jpg");width: 260px; height: 248px;}
+
+        .container_s {
+            width: 260px;
+            height: 248px;
+            overflow: hidden;
+            border-radius: 5px
+        }
+
+        .itemList_s {
+            width: 9999px;
+            margin: 0;
+            padding: 0;
+            border: 0;
+            position: relative;
+            font-size: 0;
+        }
+
+        .itemListSlider_s {
+            left: 0;
+            animation: slider_s 6s linear infinite;
+        }
+
+        .itemList_s:hover {
+            animation-play-state: paused;
+        }
+
+        .item_s {
+            width: 260px;
+            height: 248px;
+            margin: 0;
+            padding: 0;
+            border: 0;
+            display: inline-block;
+        }
+
+        .item1_s {
+            background: url("images/gg8.jpg");
+            width: 260px;
+            height: 248px;
+        }
+
+        .item2_s {
+            background: url("images/gg9.png");
+            width: 260px;
+            height: 248px;
+        }
+
+        .item3_s {
+            background: url("images/gg10.jpg");
+            width: 260px;
+            height: 248px;
+        }
 
         .ul1 {
             list-style-type: none;
@@ -119,7 +253,7 @@
             color: #000000;
         }
 
-        .b2:visited{
+        .b2:visited {
             color: black;
         }
 
@@ -136,190 +270,193 @@
             color: #00a1d6;
         }
 
-        .c{
-            display:inline-block;
-            width:100px;
-            height:40px;
-            border-style:solid;
-            border-radius:5px;
+        .c {
+            display: inline-block;
+            width: 100px;
+            height: 40px;
+            border-style: solid;
+            border-radius: 5px;
             border-width: 1px;
             border-color: #f25d8e;
-            background:#FFF;
+            background: #FFF;
             color: #f25d8e;
-            font:400 14px/50px "Microsoft YaHei";
-            text-align:center;
+            font: 400 14px/50px "Microsoft YaHei";
+            text-align: center;
             line-height: 40px;
             text-decoration: none;
         }
-        .c:hover{
-            color:#FFF;
+
+        .c:hover {
+            color: #FFF;
             background: #f25d8e;
         }
 
-        .c1{
-            display:inline-block;
-            width:60px;
-            height:30px;
-            border-style:solid;
-            border-radius:5px;
+        .c1 {
+            display: inline-block;
+            width: 60px;
+            height: 30px;
+            border-style: solid;
+            border-radius: 5px;
             border-width: 1px;
             border-color: #f25d8e;
-            background:#FFF;
+            background: #FFF;
             color: #f25d8e;
-            font:400 12px/50px "Microsoft YaHei";
-            text-align:center;
+            font: 400 12px/50px "Microsoft YaHei";
+            text-align: center;
             line-height: 35px;
             float: left;
             opacity: 0.7;
             text-decoration: none;
         }
 
-        .c1:hover{
+        .c1:hover {
             opacity: 1;
         }
 
-        .c2{
-            display:inline-block;
-            width:40px;
-            height:15px;
-            border-style:solid;
-            border-radius:20px;
+        .c2 {
+            display: inline-block;
+            width: 40px;
+            height: 15px;
+            border-style: solid;
+            border-radius: 20px;
             border-width: 1px;
             border-color: #f25d8e;
             background: #f25d8e;
             color: #ffffff;
-            font:400 6px/50px "Microsoft YaHei";
-            text-align:center;
+            font: 400 6px/50px "Microsoft YaHei";
+            text-align: center;
             line-height: 15px;
             float: left;
             margin-top: 20px;
             text-decoration: none;
         }
 
-        .c2_1{
-            display:inline-block;
-            width:40px;
-            height:15px;
-            border-style:solid;
-            border-radius:20px;
+        .c2_1 {
+            display: inline-block;
+            width: 40px;
+            height: 15px;
+            border-style: solid;
+            border-radius: 20px;
             border-width: 1px;
             border-color: #f25d8e;
             background: #f25d8e;
             color: #ffffff;
-            font:400 6px/50px "Microsoft YaHei";
-            text-align:center;
+            font: 400 6px/50px "Microsoft YaHei";
+            text-align: center;
             line-height: 15px;
             float: left;
             margin-top: 38px;
             text-decoration: none;
         }
 
-        .c2_2{
-            display:inline-block;
-            width:80px;
-            height:15px;
-            border-style:solid;
-            border-radius:20px;
+        .c2_2 {
+            display: inline-block;
+            width: 80px;
+            height: 15px;
+            border-style: solid;
+            border-radius: 20px;
             border-width: 1px;
             border-color: #8d8d8d;
             background: #8d8d8d;
             color: #ffffff;
-            font:400 6px/50px "Microsoft YaHei";
-            text-align:center;
+            font: 400 6px/50px "Microsoft YaHei";
+            text-align: center;
             line-height: 15px;
             float: left;
             margin-top: 20px;
             text-decoration: none;
         }
 
-        .c2_3{
-            display:inline-block;
-            width:80px;
-            height:15px;
-            border-style:solid;
-            border-radius:20px;
+        .c2_3 {
+            display: inline-block;
+            width: 80px;
+            height: 15px;
+            border-style: solid;
+            border-radius: 20px;
             border-width: 1px;
             border-color: #8d8d8d;
             background: #8d8d8d;
             color: #ffffff;
-            font:400 6px/50px "Microsoft YaHei";
-            text-align:center;
+            font: 400 6px/50px "Microsoft YaHei";
+            text-align: center;
             line-height: 15px;
             float: left;
             margin-top: 38px;
             text-decoration: none;
         }
 
-        .c2_4{
-            display:inline-block;
-            width:40px;
-            height:15px;
-            border-style:solid;
-            border-radius:20px;
+        .c2_4 {
+            display: inline-block;
+            width: 40px;
+            height: 15px;
+            border-style: solid;
+            border-radius: 20px;
             border-width: 1px;
             border-color: #8d8d8d;
             background: #8d8d8d;
             color: #ffffff;
-            font:400 6px/50px "Microsoft YaHei";
-            text-align:center;
+            font: 400 6px/50px "Microsoft YaHei";
+            text-align: center;
             line-height: 15px;
             float: left;
             margin-top: 20px;
             text-decoration: none;
         }
 
-        .c2_5{
-            display:inline-block;
-            width:40px;
-            height:15px;
-            border-style:solid;
-            border-radius:20px;
+        .c2_5 {
+            display: inline-block;
+            width: 40px;
+            height: 15px;
+            border-style: solid;
+            border-radius: 20px;
             border-width: 1px;
             border-color: #8d8d8d;
             background: #8d8d8d;
             color: #ffffff;
-            font:400 6px/50px "Microsoft YaHei";
-            text-align:center;
+            font: 400 6px/50px "Microsoft YaHei";
+            text-align: center;
             line-height: 15px;
             float: left;
             margin-top: 38px;
             text-decoration: none;
         }
 
-        .c3{
-            display:inline-block;
-            width:300px;
-            height:30px;
-            border-style:solid;
-            border-radius:5px;
+        .c3 {
+            display: inline-block;
+            width: 280px;
+            height: 30px;
+            border-style: solid;
+            border-radius: 5px;
             border-width: 1px;
             border-color: #a6a6a6;
             background: #a6a6a6;
             color: #000000;
-            font:400 12px/50px "Microsoft YaHei";
-            text-align:center;
+            font: 400 12px/50px "Microsoft YaHei";
+            text-align: center;
             line-height: 30px;
             float: left;
             text-decoration: none;
         }
 
-        .d{
+        .d {
             background-color: white;
             width: 250px;
             margin-left: 70px;
             height: 30px;
-            border-style:solid;
-            border-radius:5px;
+            border-style: solid;
+            border-radius: 5px;
             border-width: 1px;
-            border-color:#f25d8e;
+            border-color: #f25d8e;
             opacity: 0.7;
         }
 
-        .d:hover{
+        .d:hover {
             opacity: 1;
         }
 
-        input[type="text"]{ outline:none;}
+        input[type="text"] {
+            outline: none;
+        }
 
         .dropbtn {
             background-color: rgba(255, 255, 255, 0);
@@ -373,7 +510,7 @@
 </head>
 
 
-<body style="margin: 0px; padding: 0px;">
+<body style="margin: 0px; padding: 0px; max-width: 100%">
 <div class="top" style="width: 1600px;height: auto; margin: auto;">
     <div class="a" style="max-height: 30px">
         <div style="margin-right: 200px; margin-left: 150px;">
@@ -400,16 +537,18 @@
         </div>
     </div>
 
-    <div style="position:relative; left:220px; top:20px;">
-        <a href="main.html">
+    <div style="position:relative; left:220px; top:20px; width: 50px;">
+        <a href="index.html">
             <img src="images/giligili.png" width="210" height="90">
         </a>
     </div>
 
-    <div style="position:relative;left:1000px; bottom:50px;">
+    <div style="position:relative; left:1000px; bottom:50px; width: 50px">
         <a href="ph.html" class="c1"><img src="images/icon/ph.png">&nbsp;排行榜</a>
         <form action="" method="" class="d">
-            <input type="text" style="height: 25px;background-color: transparent; border: 0px; position:relative; top: 2px;left: 10px; font-size: 12px" placeholder="大脸妹化妆秒变女爱豆">
+            <input type="text"
+                   style="height: 25px;background-color: transparent; border: 0px; position:relative; top: 2px;left: 10px; font-size: 12px"
+                   placeholder="大脸妹化妆秒变女爱豆">
             <input type="image" src="images/icon/ss.png" style="float: right;position:relative; top: 5px;right: 10px;">
         </form>
     </div>
@@ -568,27 +707,35 @@
                 <a href="#">电视剧</a>
             </div>
         </div>
-        <div style="float:right;margin-right: 80px;margin-top: 10px">
+        <div class="dropdown" style="position:relative; top:25px; margin-left: 4%">
             <div style="float:left;">
                 <img src="images/icon/zl.png">
                 <br>
                 专栏
             </div>
+        </div>
+        <div class="dropdown" style="position:relative; top:25px">
             <div style="float:left;margin-left: 20px">
                 <img src="images/icon/xhw.png">
                 <br>
                 小黑屋
             </div>
+        </div>
+        <div class="dropdown" style="position:relative; top:25px">
             <div style="float:left;margin-left: 20px">
                 <img src="images/icon/gc.png">
                 <br>
                 广场
             </div>
+        </div>
+        <div class="dropdown" style="position:relative; top:25px">
             <div style="float:left;margin-left: 20px">
                 <img src="images/icon/zb2.png">
                 <br>
                 直播
             </div>
+        </div>
+        <div class="dropdown" style="position:relative; top:25px">
             <div style="float:left;margin-left: 20px">
                 <img src="images/tgx.gif">
             </div>
@@ -599,113 +746,143 @@
         <div id="gg" style="float: left;">
             <div class="container">
                 <ul class="itemList itemListSlider">
-                    <li class="item item1"><div style="font-size: 14px; position: relative; top: 190px; left: 10px; color: white; height: 100px">迫不及待地想与你相遇</div></li>
-                    <li class="item item2"><div style="font-size: 14px; position: relative; top: 190px; left: 10px; color: white; height: 100px">隔空催更不如现场催更</div></li>
-                    <li class="item item3"><div style="font-size: 14px; position: relative; top: 190px; left: 10px; color: white; height: 100px">正在直播SKT vs G2，谁将赢下宿命对决？</div></li>
-                    <li class="item item4"><div style="font-size: 14px; position: relative; top: 190px; left: 10px; color: white; height: 100px">万圣节看啥电影啊？</div></li>
-                    <li class="item item5"><div style="font-size: 14px; position: relative; top: 190px; left: 10px; color: white; height: 100px">会有你喜欢的课程吗？</div></li>
-                    <li class="item item1"><div style="font-size: 14px; position: relative; top: 190px; left: 10px; color: white; height: 100px">迫不及待地想与你相遇</div></li>
+                    <li class="item item1">
+                        <div style="font-size: 14px; position: relative; top: 190px; left: 10px; color: white; height: 100px">
+                            迫不及待地想与你相遇
+                        </div>
+                    </li>
+                    <li class="item item2">
+                        <div style="font-size: 14px; position: relative; top: 190px; left: 10px; color: white; height: 100px">
+                            隔空催更不如现场催更
+                        </div>
+                    </li>
+                    <li class="item item3">
+                        <div style="font-size: 14px; position: relative; top: 190px; left: 10px; color: white; height: 100px">
+                            正在直播SKT vs G2，谁将赢下宿命对决？
+                        </div>
+                    </li>
+                    <li class="item item4">
+                        <div style="font-size: 14px; position: relative; top: 190px; left: 10px; color: white; height: 100px">
+                            万圣节看啥电影啊？
+                        </div>
+                    </li>
+                    <li class="item item5">
+                        <div style="font-size: 14px; position: relative; top: 190px; left: 10px; color: white; height: 100px">
+                            会有你喜欢的课程吗？
+                        </div>
+                    </li>
+                    <li class="item item1">
+                        <div style="font-size: 14px; position: relative; top: 190px; left: 10px; color: white; height: 100px">
+                            迫不及待地想与你相遇
+                        </div>
+                    </li>
                 </ul>
             </div>
         </div>
         <div>
-            <div style="position:relative;width:160px;height:100px;float:left;margin-left: 20px">
+            <a href="sp.html" style="position:relative;width:160px;height:100px;float:left;margin-left: 20px">
                 <img src="images/sp1.jpg" alt="" width="160" height="100">
                 <div style="position:absolute;width:160px;height:100px;z-indent:2;left:0;top:65px;text-shadow:-1px 0 black,0 1px black,1px 0 black,0 -1px black;color: white">
                     【英雄联盟】2018全球总决赛MV—登峰造极境 Rise
                 </div>
-            </div>
-            <div style="position:relative;width:160px;height:100px;float:left;margin-left: 20px">
+            </a>
+            <a href="sp.html" style="position:relative;width:160px;height:100px;float:left;margin-left: 20px">
                 <img src="images/sp2.jpg" alt="" width="160" height="100">
                 <div style="position:absolute;width:160px;height:100px;z-indent:2;left:0;top:65px;text-shadow:-1px 0 black,0 1px black,1px 0 black,0 -1px black;color: white">
                     【花丸晴琉×小东人魚】ロキ/ROKI 翻唱【花寄女生宿舍】
                 </div>
-            </div>
-            <div style="position:relative;width:160px;height:100px;float:left;margin-left: 20px">
+            </a>
+            <a href="sp.html" style="position:relative;width:160px;height:100px;float:left;margin-left: 20px">
                 <img src="images/sp3.jpg" alt="" width="160" height="100">
                 <div style="position:absolute;width:160px;height:100px;z-indent:2;left:0;top:65px;text-shadow:-1px 0 black,0 1px black,1px 0 black,0 -1px black;color: white">
                     【爱折腾】安装Ubuntu+Windows双系统
                 </div>
-            </div>
-            <div style="position:relative;width:160px;height:100px;float:left;margin-left: 20px">
+            </a>
+            <a href="sp.html" style="position:relative;width:160px;height:100px;float:left;margin-left: 20px">
                 <img src="images/sp4.jpg" alt="" width="160" height="100">
                 <div style="position:absolute;width:160px;height:100px;z-indent:2;left:0;top:65px;text-shadow:-1px 0 black,0 1px black,1px 0 black,0 -1px black;color: white">
                     【Live2D】在安卓手机上放养一只白面鸮
                 </div>
-            </div>
+            </a>
 
-            <div style="position:relative;width:160px;height:100px;float:left;margin-left: 20px;margin-top: 20px">
+            <a href="sp.html" style="position:relative;width:160px;height:100px;float:left;margin-left: 20px;margin-top: 20px">
                 <img src="images/sp5.jpg" alt="" width="160" height="100">
                 <div style="position:absolute;width:160px;height:100px;z-indent:2;left:0;top:83px;text-shadow:-1px 0 black,0 1px black,1px 0 black,0 -1px black;color: white">
                     2018年日本TV动画销量排行榜
                 </div>
-            </div>
-            <div style="position:relative;width:160px;height:100px;float:left;margin-left: 20px;margin-top: 20px">
+            </a>
+            <a href="sp.html" style="position:relative;width:160px;height:100px;float:left;margin-left: 20px;margin-top: 20px">
                 <img src="images/sp6.jpg" alt="" width="160" height="100">
                 <div style="position:absolute;width:160px;height:100px;z-indent:2;left:0;top:65px;text-shadow:-1px 0 black,0 1px black,1px 0 black,0 -1px black;color: white">
                     一款让无数玩家当场去世的游戏【魔女之家MV高清重制版】
                 </div>
-            </div>
-            <div style="position:relative;width:160px;height:100px;float:left;margin-left: 20px;margin-top: 20px">
+            </a>
+            <a href="sp.html" style="position:relative;width:160px;height:100px;float:left;margin-left: 20px;margin-top: 20px">
                 <img src="images/sp7.jpg" alt="" width="160" height="100">
                 <div style="position:absolute;width:160px;height:100px;z-indent:2;left:0;top:65px;text-shadow:-1px 0 black,0 1px black,1px 0 black,0 -1px black;color: white">
                     【明日方舟/手书】Something just like this【莱茵生命】
                 </div>
-            </div>
-            <div style="position:relative;width:160px;height:100px;float:left;margin-left: 20px;margin-top: 20px">
+            </a>
+            <a href="sp.html" style="position:relative;width:160px;height:100px;float:left;margin-left: 20px;margin-top: 20px">
                 <img src="images/sp8.jpg" alt="" width="160" height="100">
                 <div style="position:absolute;width:160px;height:100px;z-indent:2;left:0;top:65px;text-shadow:-1px 0 black,0 1px black,1px 0 black,0 -1px black;color: white">
                     Switch新手小白必看！想要购买或刚入手任天堂Switch？看这一
                 </div>
-            </div>
+            </a>
         </div>
     </div>
-    <br/><br/><br/><br/>
 
-    <div style="margin-right:150px; margin-left: 150px; margin-top: 200px;">
-        <img src="images/icon/tg.png" height="40" style="float: left; ">
-        <div style="font-size: 28px; float: left; font-width: blod;">推广</div>
-        <div style="font-size: 12px; margin-left: 40px; color: gray; float: left"><br/>英雄联盟全球总决赛征稿开启！</div>
-        <div style="position:relative;width:320px;height:30px;margin-left: 900px">
-            <img src="images/gray.png" alt="" width="270" height="30">
-            <div style="position:absolute;width:320px;height:50px;z-indent:2;left:80px;top:7px;color: #666666;font-size: 12px">
-                在线人数：4077427
+    <div style="margin-right:150px; margin-left: 150px; margin-top: 250px;">
+        <div style="width: 100%; height: auto">
+            <span><img src="images/icon/tg.png" height="40"></span>
+            <span style="font-size: 28px; float: left; font-width: blod;">推广</span>
+            <span style="font-size: 12px; margin-left: 40px; color: gray;">英雄联盟全球总决赛征稿开启！</span>
+            <span style="position:relative;width:320px;height:30px; float: right; margin-right: 80px">
+                <img src="images/gray.png" alt="" width="270" height="30">
+                <div style="position:absolute;width:320px;height:50px;z-indent:2;left:80px;top:7px;color: #666666;font-size: 12px">
+                    在线人数：4077427
+                </div>
+            </span>
+        </div>
+
+        <div style="margin-top: 10px; width: 100%; height: auto">
+            <div style="float:left;">
+                <img src="images/sp9.jpg" width="160" height="100">
+                <div style="max-width: 160px">日语版《说好不哭》女声翻唱【花丸晴琉/花寄女生宿舍】</div>
+            </div>
+            <div style="float:left; margin-left: 20px">
+                <img src="images/sp10.jpg" width="160" height="100">
+                <div style="max-width: 160px">【初音ミク】太阳系迪斯科【ナユタン星人】</div>
+            </div>
+            <div style="float:left; margin-left: 20px">
+                <img src="images/sp11.jpg" width="160" height="100">
+                <div style="max-width: 160px">【av188136字幕组】┗|∵|┓想变得可爱</div>
+            </div>
+            <div style="float:left; margin-left: 20px">
+                <img src="images/sp12.jpg" width="160" height="100">
+                <div style="max-width: 160px">【爱折腾】RE:从零开始安装黑苹果</div>
+            </div>
+            <div style="float:left; margin-left: 20px">
+                <img src="images/sp13.jpg" width="160" height="100">
+                <div style="max-width: 160px">【吐血推荐】这么强大的单词软件，b站竟然没一个人知道？</div>
+            </div>
+            <div style="float:left; margin-left: 20px">
+                <img src="images/gg7.jpg" width="270" height="150">
             </div>
         </div>
-        <br/>
-        <div style="float:left;">
-            <img src="images/sp9.jpg" width="160" height="100">
-            <div style="max-width: 160px">日语版《说好不哭》女声翻唱【花丸晴琉/花寄女生宿舍】</div>
-        </div>
-        <div style="float:left; margin-left: 20px">
-            <img src="images/sp10.jpg" width="160" height="100">
-            <div style="max-width: 160px">【初音ミク】太阳系迪斯科【ナユタン星人】</div>
-        </div>
-        <div style="float:left; margin-left: 20px">
-            <img src="images/sp11.jpg" width="160" height="100">
-            <div style="max-width: 160px">【av188136字幕组】┗|∵|┓想变得可爱</div>
-        </div>
-        <div style="float:left; margin-left: 20px">
-            <img src="images/sp12.jpg" width="160" height="100">
-            <div style="max-width: 160px">【爱折腾】RE:从零开始安装黑苹果</div>
-        </div>
-        <div style="float:left; margin-left: 20px">
-            <img src="images/sp13.jpg" width="160" height="100">
-            <div style="max-width: 160px">【吐血推荐】这么强大的单词软件，b站竟然没一个人知道？</div>
-        </div>
-        <div style="float:left; margin-left: 20px">
-            <img src="images/gg7.jpg" width="270" height="150">
-        </div>
+
     </div>
 
     <div style="margin-right:150px; margin-left: 150px; margin-top: 200px">
         <img src="images/gg6.jpg" width="1170">
     </div>
 
-    <div style="margin-left: 150px; margin-top: 40px;max-width: 900px; float: left">
+    <div style="margin-left: 150px; margin-top: 40px;width: 56.5%; float: left">
         <img src="images/icon/zb.png" height="40" style="float: left; ">
         <div style="font-size: 28px; float: left; font-width: blod;">正在直播</div>
-        <div style="font-size: 12px; margin-left: 40px; color: gray; float: left"><br/>当前共有<a style="color: blue">2794</a>个在线直播</div>
+        <div style="font-size: 12px; margin-left: 40px; color: gray; float: left"><br/>当前共有<a
+                style="color: blue">2794</a>个在线直播
+        </div>
         <img src="images/dt.png" height="24" style="margin-left: 370px; margin-top: 10px">
         <img src="images/gd.png" height="24">
 
@@ -803,7 +980,7 @@
         </div>
     </div>
 
-    <div style=" float:left ;margin-top: 20px">
+    <div style=" float:left ;margin-top: 20px; width: 20%">
         <div style="margin-top: 30px">
             直播排行&nbsp;关注的主播&nbsp;为你推荐
             <br/>
@@ -813,10 +990,26 @@
         <div style="margin-top: -5px">
             <div class="container_s">
                 <ul class="itemList_s itemListSlider_s">
-                    <li class="item_s item1_s"><div style="font-size: 14px; position: relative; top: 197px; color: white; background-color:rgba(0,0,0,0.6); height: 100px; left: 10px">寻梦异世镜："室友"是只小猫咪</div></li>
-                    <li class="item_s item2_s"><div style="font-size: 14px; position: relative; top: 197px; color: white; background-color:rgba(0,0,0,0.6); height: 100px; left: 10px">投稿征集中！赶快来参加吧！</div></li>
-                    <li class="item_s item3_s"><div style="font-size: 14px; position: relative; top: 197px; color: white; background-color:rgba(0,0,0,0.6); height: 100px; left: 10px">2019英雄联盟全球总决赛</div></li>
-                    <li class="item_s item1_s"><div style="font-size: 14px; position: relative; top: 197px; color: white; background-color:rgba(0,0,0,0.6); height: 100px; left: 10px">寻梦异世镜："室友"是只小猫咪</div></li>
+                    <li class="item_s item1_s">
+                        <div style="font-size: 14px; position: relative; top: 197px; color: white; background-color:rgba(0,0,0,0.6); height: 100px; left: 10px">
+                            寻梦异世镜："室友"是只小猫咪
+                        </div>
+                    </li>
+                    <li class="item_s item2_s">
+                        <div style="font-size: 14px; position: relative; top: 197px; color: white; background-color:rgba(0,0,0,0.6); height: 100px; left: 10px">
+                            投稿征集中！赶快来参加吧！
+                        </div>
+                    </li>
+                    <li class="item_s item3_s">
+                        <div style="font-size: 14px; position: relative; top: 197px; color: white; background-color:rgba(0,0,0,0.6); height: 100px; left: 10px">
+                            2019英雄联盟全球总决赛
+                        </div>
+                    </li>
+                    <li class="item_s item1_s">
+                        <div style="font-size: 14px; position: relative; top: 197px; color: white; background-color:rgba(0,0,0,0.6); height: 100px; left: 10px">
+                            寻梦异世镜："室友"是只小猫咪
+                        </div>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -826,8 +1019,8 @@
         </div>
     </div>
 
-    <div style="margin-left: 150px; margin-right: 150px;margin-top: 450px;">
-        <div style="max-width: 900px; float: left">
+    <div style="margin-left: 150px; margin-right: 150px;margin-top: 450px; height: 400px">
+        <div style="width: 70%; float: left">
             <img src="images/icon/fj.png" height="40" style="float: left; ">
             <div style="font-size: 28px; float: left; font-width: blod;">番剧</div>
             <div style="float: left; font-size: 20px;">
@@ -839,7 +1032,9 @@
                     <li class="li1" style="margin-left: 12px"><a href="#" class="b">&nbsp; 四</a></li>
                     <li class="li1" style="margin-left: 12px"><a href="#" class="b">&nbsp; 五</a></li>
                     <li class="li1" style="margin-left: 12px"><a href="#" class="b">&nbsp; 六</a></li>
-                    <li class="li1" style="margin-left: 12px"><a href="#" class="b1" style="border-bottom: #22a4dc 2px solid;">&nbsp;周日&nbsp;</a></li>
+                    <li class="li1" style="margin-left: 12px"><a href="#" class="b1"
+                                                                 style="border-bottom: #22a4dc 2px solid;">&nbsp;周日&nbsp;</a>
+                    </li>
                 </ul>
             </div>
             <div style="float:left;margin-left: 50px">
@@ -924,7 +1119,7 @@
                         </div>
                     </div>
                     <div style="float:left; margin-left: 50px">
-                        <a href="fj.html"><img src="images/fj11.jpg" style="float:left; height: 72px;"></a>
+                        <a href="fj.html"><img src="images/fj11.png" style="float:left; height: 72px;"></a>
                         <div style="margin-left: 90px; height: 72px; width: 90px;">
                             <div style="float: top;">炎炎消防队</div>
                             <div class="c2_3">即将更新 第四话</div>
@@ -944,7 +1139,8 @@
                         <a href="fj.html"><img src="images/fj13.jpg" style="float:left; height: 72px;"></a>
                         <div style="margin-left: 90px; height: 72px; width: 90px;">
                             <div style="float: top;">
-                                命运-冠位指定 绝对魔兽战线...</div>
+                                命运-冠位指定 绝对魔兽战线...
+                            </div>
                             <div class="c2_4">第四话</div>
                         </div>
                     </div>
@@ -965,8 +1161,7 @@
                 </div>
             </div>
         </div>
-
-        <div>
+        <div style="float:left; width: 30%">
             <div style="font-size: 24px; float: left;">排行</div>
             <div style="font-size: 16px; position:relative; top:5px">
                 <div style="float:left; color: #22a4dc; margin-left: 20px; border-bottom: #22a4dc 2px solid;">全部</div>
@@ -980,78 +1175,96 @@
                     </select>
                 </form>
             </div>
-            <br/><br><br/>
-            <div>
+
+            <div style="margin-top: 50px">
                 <div>
-                    <div style="float: left; border-radius: 5px; border-color: #f25d8e; background-color: #f25d8e; color: #FFFFFF; width: 18px; text-align: center">1</div>
+                    <div style="float: left; border-radius: 5px; border-color: #f25d8e; background-color: #f25d8e; color: #FFFFFF; width: 18px; text-align: center">
+                        1
+                    </div>
                     <div style="float: left; margin-left: 10px">刀剑神域 爱丽丝篇 异界...</div>
                     <div style="float: left; margin-left: 20px; color: #8d8d8d">更新至第2话</div>
                 </div>
                 <br/>
-                <div style="margin-top: 18px">
-                    <div style="float: left; border-radius: 5px; border-color: #f25d8e; background-color: #f25d8e; color: #FFFFFF; width: 18px; text-align: center">2</div>
+                <div style="margin-top: 18px;">
+                    <div style="float: left; border-radius: 5px; border-color: #f25d8e; background-color: #f25d8e; color: #FFFFFF; width: 18px; text-align: center">
+                        2
+                    </div>
                     <div style="float: left; margin-left: 10px">命运-冠位指定 绝对魔兽...</div>
                     <div style="float: left; margin-left: 20px; color: #8d8d8d">更新至第3话</div>
                 </div>
                 <br/>
                 <div style="margin-top: 18px">
-                    <div style="float: left; border-radius: 5px; border-color: #f25d8e; background-color: #f25d8e; color: #FFFFFF; width: 18px; text-align: center">3</div>
+                    <div style="float: left; border-radius: 5px; border-color: #f25d8e; background-color: #f25d8e; color: #FFFFFF; width: 18px; text-align: center">
+                        3
+                    </div>
                     <div style="float: left; margin-left: 10px">我，不是说了能力要平均...</div>
                     <div style="float: left; margin-left: 20px; color: #8d8d8d">更新至第3话</div>
                 </div>
                 <br/>
                 <div style="margin-top: 18px">
-                    <div style="float: left; border-radius: 5px; border-color: #8d8d8d; background-color: #8d8d8d; color: #FFFFFF; width: 18px; text-align: center">4</div>
+                    <div style="float: left; border-radius: 5px; border-color: #8d8d8d; background-color: #8d8d8d; color: #FFFFFF; width: 18px; text-align: center">
+                        4
+                    </div>
                     <div style="float: left; margin-left: 10px">我的英雄学院 第四季</div>
                     <div style="float: left; margin-left: 20px; color: #8d8d8d">更新至第65话</div>
                 </div>
                 <br/>
                 <div style="margin-top: 18px">
-                    <div style="float: left; border-radius: 5px; border-color: #8d8d8d; background-color: #8d8d8d; color: #FFFFFF; width: 18px; text-align: center">5</div>
+                    <div style="float: left; border-radius: 5px; border-color: #8d8d8d; background-color: #8d8d8d; color: #FFFFFF; width: 18px; text-align: center">
+                        5
+                    </div>
                     <div style="float: left; margin-left: 10px">博人传 火影忍者新时代</div>
                     <div style="float: left; margin-left: 20px; color: #8d8d8d">更新至第129话</div>
                 </div>
                 <br/>
                 <div style="margin-top: 18px">
-                    <div style="float: left; border-radius: 5px; border-color: #8d8d8d; background-color: #8d8d8d; color: #FFFFFF; width: 18px; text-align: center">6</div>
+                    <div style="float: left; border-radius: 5px; border-color: #8d8d8d; background-color: #8d8d8d; color: #FFFFFF; width: 18px; text-align: center">
+                        6
+                    </div>
                     <div style="float: left; margin-left: 10px">我们无法一起学习！</div>
                     <div style="float: left; margin-left: 20px; color: #8d8d8d">更新至第3话</div>
                 </div>
                 <br/>
                 <div style="margin-top: 18px">
-                    <div style="float: left; border-radius: 5px; border-color: #8d8d8d; background-color: #8d8d8d; color: #FFFFFF; width: 18px; text-align: center">7</div>
+                    <div style="float: left; border-radius: 5px; border-color: #8d8d8d; background-color: #8d8d8d; color: #FFFFFF; width: 18px; text-align: center">
+                        7
+                    </div>
                     <div style="float: left; margin-left: 10px">鬼灭之刃</div>
                     <div style="float: left; margin-left: 20px; color: #8d8d8d">全26话</div>
                 </div>
                 <br/>
                 <div style="margin-top: 18px">
-                    <div style="float: left; border-radius: 5px; border-color: #8d8d8d; background-color: #8d8d8d; color: #FFFFFF; width: 18px; text-align: center">8</div>
+                    <div style="float: left; border-radius: 5px; border-color: #8d8d8d; background-color: #8d8d8d; color: #FFFFFF; width: 18px; text-align: center">
+                        8
+                    </div>
                     <div style="float: left; margin-left: 10px">喜欢本大爷的竟然就你一...</div>
                     <div style="float: left; margin-left: 20px; color: #8d8d8d">更新至第3话</div>
                 </div>
                 <br/>
                 <div style="margin-top: 18px">
-                    <div style="float: left; border-radius: 5px; border-color: #8d8d8d; background-color: #8d8d8d; color: #FFFFFF; width: 18px; text-align: center">9</div>
+                    <div style="float: left; border-radius: 5px; border-color: #8d8d8d; background-color: #8d8d8d; color: #FFFFFF; width: 18px; text-align: center">
+                        9
+                    </div>
                     <div style="float: left; margin-left: 10px">入间同学入魔了</div>
                     <div style="float: left; margin-left: 20px; color: #8d8d8d">更新至第3话</div>
                 </div>
                 <br/>
                 <div style="margin-top: 18px">
-                    <div style="float: left; border-radius: 5px; border-color: #8d8d8d; background-color: #8d8d8d; color: #FFFFFF; width: 18px; text-align: center">10</div>
+                    <div style="float: left; border-radius: 5px; border-color: #8d8d8d; background-color: #8d8d8d; color: #FFFFFF; width: 18px; text-align: center">
+                        10
+                    </div>
                     <div style="float: left; margin-left: 10px">这个勇者明明超强却过分...</div>
                     <div style="float: left; margin-left: 20px; color: #8d8d8d">更新至第2话</div>
                 </div>
             </div>
             <br/>
             <div style="margin-top: 10px">
-                <a href="#" class="c3">查看更多&gt;</a>
+                <a href="#" class="c3">查看更多&nbsp;></a>
             </div>
         </div>
     </div>
 
-    <br/>
-
-    <div style="margin-top: 50px;background:#f6f9fa no-repeat center top;width: 100%;height: 350px;">
+    <div style="margin-top: 100px; background:#f6f9fa no-repeat center top; width: 100%; height: auto;">
         <div>
             <div style="float:left; margin-left: 150px; margin-top: 20px;">
                 <div style="color: #8d8d8d;font-size: 20px">giligili</div>
@@ -1098,8 +1311,7 @@
                 </a>
             </div>
         </div>
-        <br/><br/><br/>
-        <div style="margin-top: 150px;">
+        <div style="clear: both; width: 100%; position: relative; top:20px">
             <div style="margin-left: 150px; float:left;">
                 <img src="images/partner.png" width="80">
                 <br/>
@@ -1115,7 +1327,7 @@
             网上有害信息举报专区：<img src="images/icon/zgh.png">中国互联网违法和不良信息举报中心
             亲爱的市民朋友，上海警方反诈劝阻电话“962110”系专门针对避免您财产被骗受损而设，请您一旦收到来电，立即接听。
             公司名称：山东魂殇数码科技有限公司|公司地址：山东省济南市山东师范大学梅园7号楼503室|电话：021-64632594
-        </pre>
+            </pre>
         </div>
     </div>
 </div>
