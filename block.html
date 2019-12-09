@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes"/>
+    <link rel="Shortcut Icon" href="images/logo_small.png">
+    <title>宋奕豪の博客</title>
+    <style type="text/css">
+        body {
+            background-image: url("images/backgroud.jpg");
+            background-attachment: fixed;
+            background-size: 100% auto;
+            background-repeat: no-repeat;
+        }
+
+        .b {
+            font-size: 20px;
+            text-decoration: none;
+        }
+
+        .b:link {
+            color: #ffffff;
+        }
+
+        .b:visited {
+            color: #ffffff;
+        }
+
+        ul {
+            padding-left: 2rem;
+            list-style-type: none;
+        }
+
+        ul li {
+            margin-top: 5px;
+            padding-left: 3rem;
+            background-position: 0 0;
+            background-size: 1.6rem;
+            background-repeat: no-repeat;
+        }
+
+        .a table {
+            text-align: center;
+            margin: 20px auto auto auto;
+        }
+
+        .a th {
+            color: black;
+            font-size: 16px;
+            width: 50px;
+        }
+
+        .a td {
+            color: gray;
+            font-size: 12px;
+            width: 50px;
+        }
+
+        .c table {
+            text-align: center;
+            margin: 20px auto auto auto;
+        }
+
+        .c th {
+            width: 20px;
+        }
+
+        .c td {
+            color: gray;
+            font-size: 12px;
+            width: 50px;
+        }
+
+        article {
+            max-width: 600px;
+            margin: 1em auto;
+        }
+        article h4,
+        article footer {
+            position: -webkit-sticky;  /* for Safari */
+            position: sticky;
+        }
+        article h4 {
+            margin: 2em 0 0;
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            top: 0;
+            z-index: 1;
+        }
+        article content {
+            display: block;
+            background-color: #f0f3f9;
+            position: relative;
+            padding: 1px 10px;
+        }
+        article footer {
+            background-color: rgba(255,255,255,1);
+            color: black;
+            padding: 10px;
+            bottom: 50vh;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+<div style="display: block; padding: 0px; margin: 0px; z-index: 2147483647; position: fixed; right: 0px; bottom: auto; left: auto; bottom: 0px; width: 320px; height: 270px;"><iframe name="__main_iframe__" src="https://adx.dlads.cn/vl.php?id=2329&amp;p=aj0wJnBsPTMmbT00JmY9MCZyPSZ1PWh0dHAlM0ElMkYlMkZ3d3cuaW1vbW9lLmlvJTJGJnJlcz0xNTM2eDg2NCZ0PSVFNiVBOCVCMSVFOCU4QSVCMSVFNSU4QSVBOCVFNiVCQyVBQiVFRiVCQyU4RCVFNCVCOCU5MyVFNiVCMyVBOCVFNSU4QSVBOCVFNiVCQyVBQiVFNyU5QSU4NCVFOSU5NyVBOCVFNiU4OCVCNyVFNyVCRCU5MSVFNyVBQiU5OSZsPXpoLUNOJmM9MSZoPTM2MDQmc2U9Mg==&amp;l=d3d3Lmltb21vZS5pbw==&amp;t=1575903503" width="320" height="270" marginheight="0" scrolling="no" frameborder="0" allowtransparency="true" __idm_id__="960857089" style="display: block;">   </iframe></div>
+<canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;"></canvas>
+<script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script>
+<script type="text/javascript" src="js/fireworks.js"></script>
+
+<div style="width: 60%; position:absolute; top: 0; left: 0; bottom: 0; right: 0; margin:0 auto;">
+    <div style="width: 25%; height: 1200px; float: left; padding: 0;">
+        <div style="height: 10%; background-color: black; width: 100%; padding-top: 20px; color: #FFFFFF">
+            <div style="text-align: center; width: 100%;"><a href="#" class="b">Yokoshimaの博客</a></div>
+            <div style="text-align: center; width: 100%; font-size: 14px; margin-top: 10%; line-height: 20px">
+                一个弱校的ACMer，一颗world final的心
+            </div>
+        </div>
+        <div style="height: 20%; background-color: rgba(255, 255, 255, 0.9); width: 100%; padding-top: 10px;">
+            <ul style="font-size: 16px; line-height: 30px;">
+                <li style="background-image: url(images/icon/ET.png);">主页</li>
+                <li style="background-image: url(images/icon/user.png);">关于</li>
+                <li style="background-image: url(images/icon/order.png);">标签</li>
+                <li style="background-image: url(images/icon/list.png);">分类</li>
+                <li style="background-image: url(images/icon/flow.png);">时间轴</li>
+                <li style="background-image: url(images/icon/search.png);">搜索</li>
+            </ul>
+        </div>
+        <div style="width: 100%; background-color: rgba(255, 255, 255, 0.8); margin-top: 5%;" id="float">
+            <img src="images/head.png" style="width: 50%; margin-left: 25%; margin-top: 10%">
+            <div style="margin-top: 5%; width: 100%; text-align: center">Hs_Lotus</div>
+            <div style="margin-top: 5%; width: 100%; text-align: center; color: gray; font-size: 12px">就读于山东师范大学，现大二。
+            </div>
+            <div class="a" style="margin: 20px auto auto auto;">
+                <table>
+                    <tr>
+                        <th>12</th>
+                        <th>4</th>
+                        <th>9</th>
+                    </tr>
+                    <tr>
+                        <td>posts</td>
+                        <td>categories</td>
+                        <td>tags</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="c" style="margin: 20px auto auto auto;">
+                <table>
+                    <tr>
+                        <th><img src="images/icon/social_github.png" width="20"></th>
+                        <td>github</td>
+                        <td></td>
+                        <th><img src="images/icon/social_google.png" width="20"></th>
+                        <td>google</td>
+                    </tr>
+                    <tr>
+                        <th><img src="images/icon/social_naver.png" width="20"></th>
+                        <td>naver</td>
+                        <td></td>
+                        <th><img src="images/icon/social_wechat.png" width="20"></th>
+                        <td>微信</td>
+                    </tr>
+                </table>
+            </div>
+
+            <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=100% height=86
+                    src="//music.163.com/outchain/player?type=2&id=1337938362&auto=0&height=66"></iframe>
+            <iframe src="//player.bilibili.com/player.html?aid=8045385&cid=13222291&page=1" scrolling="auto" border="0"
+                    frameborder="no" framespacing="0" allowfullscreen="true" width="90%" height="120"
+                    style="margin-left: 5%"></iframe>
+            <div style="margin: 20px auto auto auto; text-align: center; width: 100%;">
+                <img src="images/icon/rising.png" width="15">
+                <span style="font-size: 10px">100%</span>
+            </div>
+        </div>
+        <script type="text/javascript">
+            window.onload=
+                function(){
+                    var oDiv = document.getElementById("float"),
+                        H = 0,
+                        Y = oDiv
+                    while (Y) {H += Y.offsetTop; Y = Y.offsetParent}
+                    window.onscroll = function()
+                    {
+                        var s = document.body.scrollTop || document.documentElement.scrollTop
+                        if(s>H) {
+                            oDiv.style = "position:fixed;top:0;width:15%;background-color: rgba(255, 255, 255, 0.8);"
+                        } else {
+                            oDiv.style = "background-color: rgba(255, 255, 255, 0.8); margin-top: 10px"
+                        }
+                    }
+                }
+        </script>
+    </div>
+    <div style="width: 73%; height: auto; background-color: rgba(255, 255, 255, 0.6); float: left; margin-left: 2%; padding-top: 50px; text-align: center; word-wrap: break-word;word-break: break-all;">
+        <p style="font-size: 20px">web大作业</p>
+        <p style="font-size: 12px; color: gray;">2019-12-6</p>
+        <div style="max-width: 90%; text-align: left; margin-left: 5%">
+            <p>我是计本1801的宋奕豪，小队仅有我一人，作业是仿bilibili的“giligili”视频网站。一共制作了7个网页，为大家一一介绍一下。</p>
+            <article>
+                <section>
+                    <h4 style="font-size: 24px">主页面 index.html：</h4>
+                    <content>
+                        <p><img src="images/jt_1.png" style="width: 100%"></p>
+                    </content>
+                    <footer>这是我制作的第一个网页，仿制了bilibili的主页面。因为一开始什么都不会所以有的功能都是强行实现的，现在看起来写的有点蠢。</footer>
+                </section>
+                <section>
+                    <h4>细节一：</h4>
+                    <content>
+                        <p><img src="images/xj_1.png"></p>
+                    </content>
+                    <footer>b站的顶栏也是像这样的半透明、有点毛玻璃的质感，我尽可能还原了这个功能。<br/>在css当中，有同一个关于模糊度的设置，为
+                        filter: blur(a px); 后面的数值为模糊度的大小，数值越大越模糊。但是我一开始直接给div加这个样式发现是不行的，因为这
+                        样会连字都变得模糊，我用的方法是利用::before； ，这样在背景糊的情况下字不变。
+                    </footer>
+                </section>
+                <section>
+                    <h4>细节二：</h4>
+                    <content>
+                        <p>
+                            <span><img src="images/xj_2.png" height="70"></span>
+                            <span><img src="images/logo.png" height="70" style="margin-left: 30px"></span>
+                            <span><img src="images/logo_small.png" height="70" style="margin-left: 30px"></span>
+                        </p>
+                    </content>
+                    <footer>
+                        <p>自制logo</p>
+                    </footer>
+                </section>
+                <section>
+                    <h4>细节三：</h4>
+                    <content>
+                        <p><img src="images/xj_3.png"></p>
+                    </content>
+                    <footer>
+                        <p>下拉菜单，这个真的改了很久才得到满意的效果，具体的细节就不细说了，实现的方法其实很简单。先把这框下拉的样子都做出来，用 position: absolute; 让这些下拉框不影响其他元素。</p>
+                    </footer>
+                </section>
+                <section>
+                    <h4>细节四：</h4>
+                    <content>
+                        <p><img src="images/js_1.png"  style="width: 100%"></p>
+                    </content>
+                    <footer>
+                        <p>然后把这些框的 display 设成 none，这样在正常情况下这些框就不会出现。然后把 ::hover 里面的 display 写成 block，鼠标移上去的时候就会出现了。</p>
+                    </footer>
+                </section>
+                <section>
+                    <h4>细节五：</h4>
+                    <content>
+                        <p><img src="images/xj_4.png"></p>
+                    </content>
+                    <footer>
+                        <p>滚动广告这个我一开始是想要用js来写的，但是我写这个页面的时候别说js了，css都没看多少，最后查百度的时候发现一个可以替代 js 的东西，@keyframes 规则。</p>
+                        <p>@keyframes 规则的作用就是让div元素匀速平移，具体的方法我就不细说了，就是要通过单位时间的平移来设置动画，控制翻页。</p>
+                    </footer>
+                </section>
+                <section>
+                    <h4>细节六：</h4>
+                    <content>
+                        <p><img src="images/xj_5.png"></p>
+                    </content>
+                    <footer>
+                        <p>一个小细节吧，如果在这里单纯的显示白色的字会看不清楚，因为背景偏白。使用 text-shadow 属性为文字加上黑框就能在任何背景下看得清了。</p>
+                    </footer>
+                </section>
+                <section>
+                    <h4 style="font-size: 24px">排行页面 ph.html：</h4>
+                    <content>
+                        <p><img src="images/jt_2.png" style="width: 100%"></p>
+                    </content>
+                    <footer>仿的bilibili的排行，做的比较简单。</footer>
+                </section>
+                <section>
+                    <h4>细节一：</h4>
+                    <content>
+                        <p><img src="images/xj_6.png" width="100%"></p>
+                    </content>
+                    <footer>
+                        <p>自制广告</p>
+                    </footer>
+                </section>
+                <section>
+                    <h4>细节二：</h4>
+                    <content>
+                        <p><img src="images/xj_7.png" width="100%"></p>
+                    </content>
+                    <footer>
+                        <p>框阴影，其实看上去阴影很简单，但是调起来还是挺麻烦的。我的框阴影和文字阴影都是用线上的代码工具调的，方便点。</p>
+                    </footer>
+                </section>
+                <section>
+                    <h4 style="font-size: 24px">视频、番剧页面 sp.html、fj.html：</h4>
+                    <content>
+                        <p><img src="images/jt_3.png" style="width: 100%">
+                            <img src="images/jt_4.png" style="width: 100%">
+                        </p>
+                    </content>
+                    <footer>仿的bilibili的视频和番剧，这两个页面大概有一半的的代码是一样的，所以放在一起讲</footer>
+                </section>
+                <section>
+                    <h4>细节一：</h4>
+                    <content>
+                        <p><img src="images/xj_8.png"></p>
+                    </content>
+                    <footer>
+                        <p>用了 overflow-x 来达成这样的效果。</p>
+                    </footer>
+                </section>
+                <section>
+                    <h4>细节二：</h4>
+                    <content>
+                        <p><img src="images/xj_9.png" width="100%"></p>
+                    </content>
+                    <footer>
+                        <p>图片要达成鼠标移上去变色的效果好像只能把图片设置成背景然后用::hover换背景。</p>
+                    </footer>
+                </section>
+                <h4 style="font-size: 24px">个人主页页面 gr.html：</h4>
+                <content>
+                    <p>
+                        <img src="images/jt_5.png" width="100%">
+                    </p>
+                </content>
+                <footer>这个个人页面也没有什么特别的东西，就是公告部分用了 textarea 标签，然后发现这个东西有个特别有意思的地方。</footer>
+                </section>
+                <section>
+                    <h4 style="font-size: 24px">动画页面 anime.html：</h4>
+                    <content>
+                        <p>
+                            <img src="images/jt_6.png" width="100%">
+                        </p>
+                    </content>
+                    <footer>
+                        <p>
+                            这个页面的是我用网上的代码搞得，js有个 anime.js 引擎库，实现动画特别好用，不过也挺麻烦的。前面的爆炸特效，包括点击特效
+                            是照搬的网上的代码。但是后面的动画是我自己写的，来讲一下实现。这个动画库可以通过 svg 的 path 标签实现这个页面里的动画，首
+                            先要把出现的字转化成矢量图。我一开始以为可以通过 Ai 直接把字转成矢量图，但是1没想到 Ai 的转换不太符合我的预期，只能一
+                            点点该，还好giligili里面除了 G 比较难处理，别的稍微改一下就行了。通过矢量图将 path 标签的 d 元素填上，就完成了第一步。
+                            为了让他一点点出现，我就照葫芦画瓢的改他的源码，主要是要设置延迟和出现方式，现在的样子其实不是我一开始设想的，一开始想
+                            要那些点一个个掉下来，但是真的很难设置（因为那个掉下来的动画是网上写的，不太会改），只能让他们一起掉下来。
+                        </p>
+                    </footer>
+                </section>
+                <section>
+                    <h4 style="font-size: 24px">博客页面 block.html：</h4>
+                    <content>
+                        <p>
+                            <img src="images/jt_7.png" width="100%">
+                        </p>
+                    </content>
+                    <footer>
+                        我最后写了这个仿博客的个人主页，为了介绍这整个大作业。
+                    </footer>
+                </section>
+                <section>
+                    <h4>细节一：</h4>
+                    <content>
+                        <p><img src="images/xj_10.png"></p>
+                    </content>
+                    <footer>
+                        <p>这里的效果是我使用了js实现的，因为一开始不知道有 position: sticky; 这个东西，结果是非常的后悔。</p>
+                        <p>还有bilibili和网易云音乐的两个外链，做美化挺好用的。</p>
+                    </footer>
+                </section>
+                <section>
+                    <h4>细节二：</h4>
+                    <content>
+                        <p><img src="images/xj_11.png" width="100%"></p>
+                    </content>
+                    <footer>
+                        <p>这里就是用 position: sticky; 写的，比js写的简单，还好控制。但是受限于父元素，也不能迭代，各有好坏吧。</p>
+                    </footer>
+                </section>
+            </article>
+            <div style="height: 300px"></div>
+            <img src="images/thanks.png" width="100%">
+        </div>
+    </div>
+</div>
+</body>
+</html>
